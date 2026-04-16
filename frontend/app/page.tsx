@@ -36,7 +36,7 @@ export default function Home() {
         <p className="hero-description">
           Sube tu archivo Excel y obtén dashboards automáticos, haz preguntas en
           lenguaje natural y genera pronósticos de ventas. Todo potenciado por
-          OpenAI y Prophet.
+          Gemini 1.5 Flash y Prophet.
         </p>
         <div className="hero-actions">
           <a href="/upload" className="btn btn-primary btn-lg" id="cta-upload">
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="feature-icon">🤖</div>
             <h3>Preguntas con IA</h3>
             <p>
-              Pregunta en español sobre tus datos. OpenAI genera SQL seguro,
+              Pregunta en español sobre tus datos. Gemini 1.5 Flash genera SQL seguro,
               ejecuta la consulta y te responde en lenguaje natural.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
           <span className="stack-chip">🐍 FastAPI</span>
           <span className="stack-chip">🐼 Pandas</span>
           <span className="stack-chip">🦆 DuckDB</span>
-          <span className="stack-chip">🧠 OpenAI</span>
+          <span className="stack-chip">🧠 Gemini 1.5 Flash</span>
           <span className="stack-chip">📊 Prophet</span>
           <span className="stack-chip">🐳 Docker</span>
           <span className="stack-chip">⚙️ GitHub Actions</span>
@@ -139,7 +139,7 @@ export default function Home() {
       <footer className="footer" id="footer">
         <p>
           AI Sales Assistant &copy; {new Date().getFullYear()} &mdash; Portfolio
-          Project &mdash; Built with Next.js + FastAPI + OpenAI
+          Project &mdash; Built with Next.js + FastAPI + Gemini 1.5 Flash
         </p>
       </footer>
     </div>

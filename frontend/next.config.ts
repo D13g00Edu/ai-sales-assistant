@@ -1,9 +1,9 @@
 ﻿import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
-  // Sincronizar trailing slash para evitar errores de MIME types en Render
-  trailingSlash: true,
+  // Configuración para que funcione en Render
+  // Deshabilitamos trailingSlash que suele dar problemas de MIME
+  trailingSlash: false,
 };
 
 export default nextConfig;
