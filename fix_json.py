@@ -1,4 +1,6 @@
-{
+﻿import os
+path = "frontend/package.json"
+json_content = """{
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -24,3 +26,6 @@
     "typescript": "^5"
   }
 }
+"""
+with open(path, "wb") as f:
+    f.write(json_content.encode("utf-8"))
