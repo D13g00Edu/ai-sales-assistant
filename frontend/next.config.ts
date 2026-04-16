@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+﻿import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  // Sincronizar trailing slash para evitar errores de MIME types en Render
+  trailingSlash: true,
 };
 
 export default nextConfig;
