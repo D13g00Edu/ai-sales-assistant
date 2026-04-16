@@ -29,32 +29,3 @@ A diferencia de aplicaciones típicas CRUD, esta aplicación funciona como un **
 *   **Database (OLAP)**: DuckDB.
 *   **Data Processing**: Python 3.12, Pandas, Pyarrow.
 *   **AI / Machine Learning**: Google Generative AI (Gemini Flash), Facebook Prophet.
-
----
-
-## 📦 Inicialización en Local
-
-**1. Clonar e Instalar Frontend**
-`ash
-cd frontend
-npm install
-npm run dev
-`
-
-**2. Configurar e Instalar Backend**
-`ash
-cd backend
-python -m venv venv
-.env\Scriptsctivate  # O source venv/bin/activate en Linux/Mac
-pip install -r requirements.txt
-pip install pyarrow prophet google-generativeai
-
-# Configura tu .env (En /backend)
-GEMINI_API_KEY=tu_clave_aqui_de_google_ai_studio
-`
-
-**3. Lanzar API REST**
-`ash
-uvicorn app.main:app --port 8000 --reload
-`
-*(Luego, accede a http://localhost:3000)*
